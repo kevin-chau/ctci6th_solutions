@@ -1,0 +1,12 @@
+Dominos:
+	8x8 chessboard, opposite cornes cut off.
+	31 dominos. Can you cover the board?
+
+Solution:
+	There are 32 white squares and 30 black squares.
+	Each domino takes 1 white and 1 black space.
+	Assume you can tile the board. Then we cover 31 black squares covered
+	and 31 white squares covered. This contradicts the number of squares.
+	Thus by contradiction, it is impossible to cover the board.
+
+

@@ -1,0 +1,28 @@
+The Heavy Pill:
+	You are given 20 bottles. 19 bottles have 1.0 gram pills. 1 Bottle has 1.1 gram pills.
+	The bottles may or may not have the same number of pills.
+	If you can use an exact scale only once, how do you determine the bottle with heavier pills?
+
+Hints:
+	1. what if you assigned a number to each of the bottles
+	2. You should probably take pills out of each bottle
+Solution:
+
+	Number each bottle 1-20 (use tape and a marker). For bottle 1, put 1 pill on the scale. For bottle 2, put 2 pills.
+	For bottle 3, put 3 pills ... for bottle 20, put 20 pills.
+
+	If bottle 1 contains the heavy pills, the scale will read XXX.1 grams.
+	If bottle 2 contains the heavy pills, the scale will read XXX.2 grams.
+	If bottle 10 contains the heavy pills, then the scale will read XXXX.0 grams.....
+	If bottle 11 contains the heavy pills, then the scale will read XXXX.1 grams.....
+
+	Now an equation:
+	ex: bottle 9 is the heavy bottle
+	weight = 1*(1+2+3+4+5+6+7+8+10+11+12+13+14+15+16+17+18+19+20) + 1.1*9
+
+	weight = (20*21/2 - x) + 1.1*x
+
+	weight = 210 - x + 1.1x
+
+	weight - 210 = .1x
+	x = (weight - 210) * 10
